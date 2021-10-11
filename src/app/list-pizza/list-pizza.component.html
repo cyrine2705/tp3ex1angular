@@ -1,0 +1,6 @@
+<h1> nos choix de pizzas</h1>
+<ul class="list-group">
+    <ng-container *ngFor= "let p of lespizzas" >
+    <cyr-pizza class="list-group-item" [ngClass]="{'p-3 mb-2 bg-warning text-dark':!p.vegetarien}" [piz]="p"></cyr-pizza>
+    </ng-container>
+</ul>
