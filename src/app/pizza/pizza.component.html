@@ -1,12 +1,12 @@
-<li class="badge bg-dark ">{{p.nom}}</li>
-<li class="d-flex justify-content-between" > <img [src]="p.image" class="rounded-circle "/>
-    prix: {{p.prix|  currency :'TND':'symbol':'2.3':'fr'}} </li>
-   <li> <button (click)="afficher()" class="btn btn-link"> afficher commentaire </button>
+<div class="badge bg-dark ">{{p.nom}}</div>
+<div class="d-flex justify-content-between" > <img [src]="p.image" class="rounded-circle "/>
+    prix: {{p.prix|  number :'2.3'}} DT </div>
+   <div> <button (click)="afficher()" class="btn btn-link"> afficher commentaire </button>
     <div *ngIf="txt">
     <ng-container  *ngFor= "let e of p.comments" > 
         <cyr-comment [comm]="e" > </cyr-comment>
     </ng-container></div>
-   </li>
+   </div>
    
     
    

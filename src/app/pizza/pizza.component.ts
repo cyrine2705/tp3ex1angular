@@ -12,7 +12,7 @@ export class PizzaComponent implements OnInit {
   @Input("piz")p!:Pizza;
  txt:boolean=false;
  afficher(){
-   this.txt=true;
+   this.txt=!this.txt;
  
  }
 
